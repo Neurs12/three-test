@@ -1,8 +1,14 @@
 import { Canvas, useFrame, useLoader } from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/Addons.js";
 import { Environment, MeshReflectorMaterial, MotionPathControls, ScrollControls, Text, useMotion, useScroll } from "@react-three/drei";
+import { useEffect } from "react";
+import { waitSuspense } from "./loading";
 
 export default function Wanderers() {
+    useEffect(() => {
+        waitSuspense.set(true);
+    }, []);
+
     return (
         <>
             <Canvas style={{width: "100vw", height: "100vh", position: "absolute"}}>

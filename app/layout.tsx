@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Auth Project",
-  description: "A test for making 3D stuff in Three.js",
+  description: "A distant future, where human found a new earth, but after \"that\" event, they've found a big lab hidden in the woods.",
 }
 
 export default function RootLayout({

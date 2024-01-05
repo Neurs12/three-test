@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@hookstate/core": "^4.0.1",
     "@react-three/drei": "^9.92.7",
     "@react-three/fiber": "^8.15.13",
     "@types/three": "^0.160.0",
