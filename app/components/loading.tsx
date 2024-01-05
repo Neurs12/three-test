@@ -11,7 +11,7 @@ export default function Loading() {
             updateBegin(String.fromCodePoint((19968 + Math.floor((Math.random() * 20927)))));
             updateEnd(String.fromCodePoint((19968 + Math.floor(Math.random() * 20927))));
             if (waitSuspense.get()) clearInterval(run);
-        }, 100);
+        }, 1000/60);
     }, []);
 
     return (
